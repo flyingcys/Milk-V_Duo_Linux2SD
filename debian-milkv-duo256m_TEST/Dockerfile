@@ -1,7 +1,7 @@
 # Use an Ubuntu base image
 FROM ubuntu:22.04
 
-ARG BOARD=milkv-duo256m
+ARG BOARD=milkv-duo256m-sd
 ENV BOARD=${BOARD}
 
 ENV DEBIAN_FRONTEND=non-interactive

@@ -1,8 +1,8 @@
-export BOARD=milkv-duo256m
+export BOARD=milkv-duo256m-sd
 export CONFIG=cv1812cp_milkv_duo256m_sd
 
-export DISTRO="mantic"
-export BASE_URL="http://ports.ubuntu.com/ubuntu-ports"
+export DISTRO="jammy"
+export BASE_URL="http://mirrors.tuna.tsinghua.edu.cn/ubuntu-ports"
 export ROOTPW=${ROOTPW:-milkv}
 
 export ROOTFS_SIZE="1G"

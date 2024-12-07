@@ -46,7 +46,7 @@ mkdir -p $ROOTFS
  
 # generate minimal bootstrap rootfs
 update-binfmts --enable
-debootstrap --exclude vim --arch=riscv64 --foreign $DISTRO $ROOTFS $BASE_URL
+debootstrap --exclude vim --arch=riscv64 --foreign jammy $ROOTFS http://mirrors.tuna.tsinghua.edu.cn/ubuntu-ports
 
 cp -rf /usr/bin/qemu-riscv64-static $ROOTFS/usr/bin/
 cp /bootstrap.sh $ROOTFS/.
